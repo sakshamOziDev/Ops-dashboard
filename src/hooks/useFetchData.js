@@ -23,7 +23,7 @@ export const useFetchData = (endpoint, params, intervalMs = 300000) => { // defa
         });
     };
 
-    fetchData(); // initial fetch
+    fetchData();    // initial fetch
 
     const interval = setInterval(fetchData, intervalMs); // auto-refresh
 

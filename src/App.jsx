@@ -3,7 +3,6 @@ import { useState } from 'react'
 // // import viteLogo from '/vite.svg'
 import './App.css'
 import SideDrawer from './component/SideDrawer' // import drawer
-import { dashboardData } from './component/dashboardData'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useFetchData } from './hooks/useFetchData';
 function App() {
