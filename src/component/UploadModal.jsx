@@ -72,7 +72,7 @@ const UploadModal = ({ isOpen, onClose, title, uploadType }) => {
             position: 'absolute',
             top: '16px',
             right: '16px',
-            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+            background: 'linear-gradient(135deg, #B15177 0%,#B15177 100%)',
             color: 'white',
             border: 'none',
             borderRadius: '50%',
@@ -92,11 +92,11 @@ const UploadModal = ({ isOpen, onClose, title, uploadType }) => {
           }}
           onMouseEnter={(e) => {
             e.target.style.transform = 'scale(1.1)';
-            e.target.style.boxShadow = '0 6px 16px rgba(102,126,234,0.4)';
+            e.target.style.boxShadow = '0 6px 16px #B15177';
           }}
           onMouseLeave={(e) => {
             e.target.style.transform = 'scale(1)';
-            e.target.style.boxShadow = '0 4px 12px rgba(102,126,234,0.3)';
+            e.target.style.boxShadow = '0 4px 12px #B15177';
           }}
           aria-label="Close modal"
         >
@@ -110,7 +110,7 @@ const UploadModal = ({ isOpen, onClose, title, uploadType }) => {
           marginBottom: '24px',
           color: '#374151',
           textAlign: 'center',
-          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+          background: 'linear-gradient(135deg, #B15177 0%, #B15177 100%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
@@ -205,7 +205,7 @@ const UploadModal = ({ isOpen, onClose, title, uploadType }) => {
               padding: '14px 28px',
               background: loading 
                 ? 'linear-gradient(135deg, #9ca3af 0%, #6b7280 100%)'
-                : 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                : 'linear-gradient(135deg, #B15177 0%, #B15177 100%)',
               color: '#fff',
               border: 'none',
               borderRadius: '12px',

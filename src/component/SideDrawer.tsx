@@ -24,22 +24,22 @@ const SideDrawer: React.FC<SideDrawerProps> = ({ isOpen, onClose }) => {
           <li>Rider</li> */}
           <li style={{ 
             cursor: 'pointer', 
-            color: '#667eea', 
+            color: '#fff', 
             fontWeight: 'bold',
             padding: '12px 16px',
             margin: '4px 0',
             borderRadius: '8px',
             transition: 'all 0.3s ease',
-            background: 'linear-gradient(135deg, rgba(102,126,234,0.15) 0%, rgba(118,75,162,0.15) 100%)',
+            background: 'linear-gradient(135deg, #B15177 0%, #B15177 100%)',
           }} 
           onMouseEnter={(e) => {
             const target = e.target as HTMLElement;
-            target.style.background = 'linear-gradient(135deg, rgba(102,126,234,0.25) 0%, rgba(118,75,162,0.25) 100%)';
+            target.style.background = 'linear-gradient(135deg, #B15177 0%, #B15177 100%)';
             target.style.transform = 'translateX(4px)';
           }}
           onMouseLeave={(e) => {
             const target = e.target as HTMLElement;
-            target.style.background = 'linear-gradient(135deg, rgba(102,126,234,0.15) 0%, rgba(118,75,162,0.15) 100%)';
+            target.style.background = 'linear-gradient(135deg, #B15177 0%, #B15177 100%)';
             target.style.transform = 'translateX(0)';
           }}
           onClick={() => { 
@@ -50,22 +50,22 @@ const SideDrawer: React.FC<SideDrawerProps> = ({ isOpen, onClose }) => {
           
           <li style={{ 
             cursor: 'pointer', 
-            color: '#f093fb', 
+            color: '#fff', 
             fontWeight: 'bold',
             padding: '12px 16px',
             margin: '4px 0',
             borderRadius: '8px',
             transition: 'all 0.3s ease',
-            background: 'linear-gradient(135deg, rgba(240,147,251,0.15) 0%, rgba(245,87,108,0.15) 100%)',
+            background: 'linear-gradient(135deg, #B15177 0%, #B15177 100%)',
           }} 
           onMouseEnter={(e) => {
             const target = e.target as HTMLElement;
-            target.style.background = 'linear-gradient(135deg, rgba(240,147,251,0.25) 0%, rgba(245,87,108,0.25) 100%)';
+            target.style.background = 'linear-gradient(135deg, #B15177 0%, #B15177 100%)';
             target.style.transform = 'translateX(4px)';
           }}
           onMouseLeave={(e) => {
             const target = e.target as HTMLElement;
-            target.style.background = 'linear-gradient(135deg, rgba(240,147,251,0.15) 0%, rgba(245,87,108,0.15) 100%)';
+            target.style.background = 'linear-gradient(135deg, #B15177 0%, #B15177 100%)';
             target.style.transform = 'translateX(0)';
           }}
           onClick={() => { 

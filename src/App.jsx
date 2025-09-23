@@ -23,13 +23,13 @@ function App() {
           path="/"
           element={
             <>
-              {/* Top Bar: Hamburger + Title in a row */}
+             
               <div style={{
                 position: 'fixed',
                 top: 0,
                 left: 0,
                 width: '100%',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #B15177 0%, #FFFFFF 100%)',
                 display: 'flex',
                 alignItems: 'center',
                 boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
@@ -75,7 +75,6 @@ function App() {
 
               <SideDrawer isOpen={isDrawerOpen} onClose={() => setIsDrawerOpen(false)} />
 
-              {/* Dropdown on top right above grid */}
               <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', marginTop: 80, marginBottom: 20, paddingRight: 24 , }}>
                 <select
                   style={{ 
@@ -85,7 +84,7 @@ function App() {
                     fontSize: '1rem', 
                     fontWeight: 600, 
                     minWidth: 180, 
-                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    background: '#ffffff',
                     color: '#000000',
                     boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
                     cursor: 'pointer',
@@ -96,8 +95,8 @@ function App() {
                   defaultValue="all"
                   onMouseEnter={(e) => {
                     e.target.style.transform = 'translateY(-2px)';
-                    e.target.style.color = '#fff';
-                    e.target.style.boxShadow = '0 12px 40px rgba(0,0,0,0.2)';
+                    e.target.style.color = '#B15177';
+                    // e.target.style.boxShadow = '0 12px 40px rgba(0,0,0,0.2)';
                   }}
                   onMouseLeave={(e) => {
                     e.target.style.transform = 'translateY(0)';
@@ -123,30 +122,31 @@ function App() {
                 {data && (Object.entries(data.summary)
                     .filter(([key]) => key !== "filter") // filter skip
                     .map(([key, value], idx) => {
-                      const gradients = [
-                        'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                        'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-                        'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-                        'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
-                        'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
-                        'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
-                        'linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)',
-                        'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
-                      ];
-                      const gradient = gradients[idx % gradients.length];
+                      // const gradients = [
+                      //   'linear-gradient(135deg, #ffffff 0%, #ffffff 100%)',
+                      //   'linear-gradient(135deg, #ffffff 0%, #ffffff 100%)',
+                      //   'linear-gradient(135deg, #ffffff 0%, #ffffff 100%)',
+                      //   'linear-gradient(135deg, #ffffff 0%, #ffffff 100%)',
+                      //   'linear-gradient(135deg, #ffffff 0%, #ffffff 100%)',
+                      //  'linear-gradient(135deg, #ffffff 0%, #ffffff 100%)',
+                      //  'linear-gradient(135deg, #ffffff 0%, #ffffff 100%)',
+                      //  'linear-gradient(135deg, #ffffff 0%, #ffffff 100%)',
+                      //  'linear-gradient(135deg, #ffffff 0%, #ffffff 100%)',
+                      // ];
+                      // const gradient = gradients[idx % gradients.length];
                       
                       return (
                       <div
                         key={idx}
                         style={{
-                            background: gradient,
+                            background: '#ffffff',
                             borderRadius: 16,
                             boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
                             padding: '24px 16px',
-                          display: 'flex',
-                          flexDirection: 'column',
-                          alignItems: 'center',
-                          justifyContent: 'center',
+                           display: 'flex',
+                           flexDirection: 'column',
+                           alignItems: 'center',
+                           justifyContent: 'center',
                             minHeight: 140,
                             cursor: 'pointer',
                             transition: 'all 0.3s ease',
@@ -165,15 +165,15 @@ function App() {
                           <div style={{ 
                             fontSize: '2rem', 
                             fontWeight: 'bold', 
-                            color: '#fff',
-                            textShadow: '0 2px 4px rgba(0,0,0,0.3)',
+                            color: '#B15177',
+                            // textShadow: '0 2px 4px rgba(0,0,0,0.3)',
                             marginBottom: '8px',
                           }}>
                           {value}
                         </div>
                           <div style={{ 
                             fontSize: '0.9rem', 
-                            color: 'rgba(255,255,255,0.9)', 
+                            color: '#B15177', 
                             textAlign: 'center',
                             fontWeight: '500',
                             letterSpacing: '0.5px',
@@ -185,8 +185,8 @@ function App() {
                     }))}
 
               </div>
-
-              {/* Dashboard Table */}
+      
+              
               <div style={{ padding: '0 24px', marginTop: 24 }}>
                 <table style={{ 
                   width: '100%', 
@@ -200,7 +200,7 @@ function App() {
                 }}>
                   <thead>
                     <tr style={{ 
-                      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                      background: 'linear-gradient(135deg, #B15177 0%, #B15177 100%)',
                     }}>
                       <th style={{ 
                         padding: '16px 12px', 
@@ -220,7 +220,7 @@ function App() {
                         fontSize: '0.9rem',
                         letterSpacing: '0.5px',
                         textAlign: 'center',
-                        textShadow: '0 1px 2px rgba(0,0,0,0.3)',
+                        // textShadow: '0 1px 2px rgba(0,0,0,0.3)',
                       }}>Total Orders Delivered</th>
                       <th style={{ 
                         padding: '16px 12px', 

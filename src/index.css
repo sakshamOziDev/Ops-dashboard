@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: #213547;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,7 +22,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #fff 0%, #fff 100%);
   background-attachment: fixed;
 }
 
@@ -168,11 +168,11 @@ button:focus-visible {
   align-items: center;
   padding: 1rem;
   border-bottom: 1px solid rgba(102,126,234,0.1);
-  background: linear-gradient(135deg, rgba(102,126,234,0.05) 0%, rgba(118,75,162,0.05) 100%);
+  background: linear-gradient(135deg,#fff 0%, #fff 100%);
 }
 
 .drawer-header button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #B15177 0%, #B15177 100%);
   color: white;
   border: none;
   border-radius: 50%;
