@@ -16,16 +16,6 @@ const UploadModal = ({ isOpen, onClose, title, uploadType }) => {
 
         if(e.target.file1.files[0]) await uploadRiderCSV(e.target.file1.files[0]);
         if(e.target.file2.files[0]) await uploadCSV(e.target.file2.files[0]);
-
-        // const file1 = e.target.file1.files[0];
-        // const file2 = e.target.file2.files[0];
-        // // Upload both Rider and Picker files
-        // // if (file1) await uploadRiderCSV(file1);
-        // // if (file2) await uploadCSV(file2);
-
-        // if(file1) await uploadRiderCSV(file1);
-        // if(file2) await uploadCSV(file2);
-
         setMessage('Files uploaded successfully!');
       } else if (uploadType === 'claver') {
         const file1 = e.target.file1.files[0];
@@ -34,6 +24,7 @@ const UploadModal = ({ isOpen, onClose, title, uploadType }) => {
         setMessage('File uploaded successfully!');
       }
     } catch (err) {
+      console.error(err);
       setMessage('Upload failed. Please try again.');
     }
     setLoading(false);

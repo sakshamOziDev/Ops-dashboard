@@ -15,7 +15,7 @@ function App() {
     var data = {"filter" : filterValue};
     setFilter(data);
 
-  }
+  } 
   return (
     <Router>
       <Routes>
@@ -105,7 +105,7 @@ function App() {
                   }}
                 >
                   <option value="hour"  style={{ color: '#000000' }}>last hour</option>
-                  <option value="today"  style={{ color: '#000000' }}>Past Month</option>
+                  <option value="today"  style={{ color: '#000000' }}>today</option>
                   <option value="day"  style={{ color: '#000000' }}>last day</option>
                   <option value="week"  style={{ color: '#000000' }}>last week</option>
                   <option value="month" style={{ color: '#000000' }}>Last Month</option>
